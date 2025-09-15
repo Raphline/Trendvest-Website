@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - Trendvest Holdings Limited</title>
+  <link rel="stylesheet"href="css/styles.css">
+  <link rel="stylesheet"href="style.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">TRENDVEST HOLDINGS LIMITED</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="properties.html">Property Listings</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="services-station">
+    <h2 class="services-heading">Our Services</h2>
+    <p class="sercices-sub">At Trendvest Holdings Limited, we provide reliable, professional, and transparent services to landlords, tenants, and investors.</p>
+
+    <!-- Service 1 -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="images/w6.png" alt="Property&facility management">
+      </div>
+      <div class="service-text">
+        <h3>Property&facility Management</h3>
+        <ol>
+          <li>Security oversight and supervision</li>
+          <li>Cleaning and waste management</li>
+          <li>Maintenance of common areas and amenities</li>
+          <li>Landscaping and grounds care</li>
+        </ol>
+        
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card reverse">
+      <div class="service-img">
+        <img src="images/w8.png" alt="Financial&Investment Services">
+      </div>
+      <div class="service-text">
+        <h3>Financial&Investment Services</h3>
+        <ol>
+          <li>Trendvest SACCO Society -savings and credit solutions for members</li>
+          <li>Investment opportunities in realestate and related ventures</li>
+          <li>Advisory on sustainable wealth growth</li>
+        </ol>
+      </div>
+    
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <div class="service-img">
+        <img src="images/w10.png" alt="Tenant & Owner Relations">
+      </div>
+      <div class="service-text">
+        <h3>Tenant & Owner Relations</h3>
+        <ol>
+          <li>Resident communications</li>
+          <li>Complaint handling & AGM support</li>
+          <li>Transparent service charge collection and reporting</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-card reverse">
+      <div class="service-img">
+        <img src="images/w9.png" alt="Specialized Services">
+      </div>
+      <div class="service-text">
+        <h3>Specialized Services</h3>
+        <ol>
+          <li>Waste and garbage collection </li>
+          <li>Landscaping and outdoor maintenance</li>
+          <li>Interior design and space optimization</li>
+          <li>Vendor management & Contract negotiations</li>
+          <li>Preventive maintenance planning</li>
+          <li>Amenity operations(pool,gym,sauna,restaurants)</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

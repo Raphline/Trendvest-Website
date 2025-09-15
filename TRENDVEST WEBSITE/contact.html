@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Trendvest Holdings</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">TRENDVEST HOLDINGS LIMITED</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="properties.html">Property Listings</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      
+      <div class="contact-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Address</h3>
+        <p>Utugi House, 2nd Floor<br>Opp. Kasarani Police Station</p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Call Us</h3>
+        <p>+254 758 913 777<br>+254 740 509 082</p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>info@trendvestlimited.com<br>support@trendvestlimited.com</p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Open Hours</h3>
+        <p>Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map Section -->
+  <section class="map-section">
+    <h2>Find Us Here</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.841139688664!2d36.884!3d-1.221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3e41b77e6f7d%3A0x4e16d5f9aa96fba!2sUtugi%20House%2C%20Kasarani%20Nairobi!5e0!3m2!1sen!2ske!4v1693200000000!5m2!1sen!2ske" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="form-section">
+    <h2>Send Us a Message</h2>
+    <form action="mailto:info@trendvestlimited.com" method="POST" enctype="text/plain" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="Phone number" name="Phone number" placeholder="Your Phone number" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

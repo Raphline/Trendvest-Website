@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Trendvest Holdings</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>TRENDVEST HOLDINGS LIMITED</h1>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="properties.html">Property Listings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+     <div class="slideshow">
+    <div class="slide" style="background-image: url('images/w11.png');"></div>
+    <div class="slide" style="background-image: url('images/w12.png');"></div>
+    <div class="slide" style="background-image: url('images/w3.png');"></div>
+  
+    <div class="about-content">
+      <h2><b><ul>About Us</ul></b></h2>
+      
+      <p>
+        At Trendvest Holdings Limited, we specialize in property management, rental solutions, 
+        and Sacco services. Our mission is to bridge the gap between landlords and tenants 
+        while providing secure and efficient management solutions.
+      </p>
+      <p>
+        With years of experience in real estate, we are committed to offering professional, 
+        reliable, and transparent services tailored to meet the unique needs of our clients.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission, Vision, Values -->
+  <section class="mvv">
+    
+
+    <div class="overlay"></div>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>
+        To provide reliable property and financial management solutions that empower landlords, tenants,
+        and investors with peace of mind and sustainable growth.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>
+        To become the leading property and Sacco management company in the region, 
+        setting the standard for excellence and trust.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Our Values</h3>
+      <p>
+        Integrity, professionalism, transparency, and customer satisfaction guide everything we do.  
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

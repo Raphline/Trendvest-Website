@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listings - Trendvest Holdings</title>
+<link rel="stylesheet"href="css/styles.css">
+  <link rel="stylesheet"href="style.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">TRENDVEST HOLDINGS LIMITED</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="properties.html">Property Listings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="property-options">
+  <div class="property-container">
+    <h2>Property Listings</h2>
+    <p>Select the option that applies to you:</p>
+    <div class="buttons">
+      <a href="properties/landlords.html" class="btn">For Landlords</a>
+      <a href="properties/tenants.html" class="btn">For Tenants</a>
+    </div>
+  </div>
+</main>
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

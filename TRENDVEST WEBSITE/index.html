@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trendvest Holdings Limited</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>TRENDVEST HOLDINGS LIMITED</h1>
+    </div>
+
+    <!-- Hamburger button -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="propertylistings.html">Property Listings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Slideshow -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/w5.png" alt="Slide 1">
+      <div class="overlay"></div>
+      <div class="text">
+        <h1>Welcome to Trendvest Holdings</h1>
+        <p>Trusted in Property & Rental Management & Sacco services</p>
+        <a href="about.html" class="cta-btn">Know More About Us</a>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/w10.png" alt="Slide 2">
+      <div class="overlay"></div>
+      <div class="text">
+        <h1>What we offer</h1>
+        <p>Find more about our specialized services </p>
+        <a href="services.html" class="cta-btn">Services</a>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/w15.png" alt="Slide 3">
+      <div class="overlay"></div>
+      <div class="text">
+        <h1>Contact Us</h1>
+        <p>Reach out to us for better services</p>
+        <a href="contact.html" class="cta-btn">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+    // Auto change every 6s
+    setInterval(() => {
+      plusSlides(1);
+    }, 6000);
+  </script>
+</body>
+</html>

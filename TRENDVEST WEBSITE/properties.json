@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Modern 2 Bedroom Apartment",
+    "type": "2 Bedroom",
+    "location": "Nairobi - Westlands",
+    "price": 45000,
+    "image": "../images/apartment1.jpg"
+  },
+  {
+    "title": "Cozy Bedsitter",
+    "type": "Bedsitter",
+    "location": "Nairobi - Kasarani",
+    "price": 12000,
+    "image": "../images/apartment2.jpg"
+  },
+  {
+    "title": "Spacious 1 Bedroom",
+    "type": "1 Bedroom",
+    "location": "Thika Town",
+    "price": 20000,
+    "image": "../images/apartment3.jpg"
+  }
+]
